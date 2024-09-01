@@ -11,12 +11,15 @@
   * The function reads in all the terms from filename, and allocates memory for all the terms in the file and stores a pointer to the block in `*terms`.
   * The function stores the number of terms in `*pnterms`.
   * The terms should be sorted in ascending lexicographic order.
+ 
 * `int lowest_match(term *terms, int nterms, char *substr);`
   * The function returns the index in terms of the **first term** in lexicographic ordering that matches the string `substr`.
   * This function must run in _O(log(nterms))_ time.
+   
 * `int highest_match(struct term *terms, int nterms, char *substr);`
   * The function returns the index in terms of the **last term** in lexicographic order that matches the string `substr`.
   * This function must run in _O(log(nterms))_ time.
+   
 * `void autocomplete(term **answer, int *n_answer, term *terms, int nterms, char *substr);`
   * The function places the answers in `answer`, with `*n_answer` being the number of answers.
   * The answers should be sorted by weight in non-increasing order.
