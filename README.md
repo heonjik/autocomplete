@@ -8,16 +8,16 @@
 * Extract the top matching terms by weight.
 ## Functions
 1. `void read_in_terms(term **terms, int *pnterms, char *filename);`
-  * The function reads in all the terms from filename, and allocates memory for all the terms in the file and stores a pointer to the block in `*terms`.
-  * The function stores the number of terms in `*pnterms`.
-  * The terms should be sorted in ascending lexicographic order.
+ 1. The function reads in all the terms from filename, and allocates memory for all the terms in the file and stores a pointer to the block in `*terms`.
+ 2. The function stores the number of terms in `*pnterms`.
+ 3. The terms should be sorted in ascending lexicographic order.
 2. `int lowest_match(term *terms, int nterms, char *substr);`
-  * The function returns the index in terms of the **first term** in lexicographic ordering that matches the string `substr`.
-  * This function must run in O(log(nterms)) time.
+ 1. The function returns the index in terms of the **first term** in lexicographic ordering that matches the string `substr`.
+ 2. This function must run in _O(log(nterms))_ time.
 3. `int highest_match(struct term *terms, int nterms, char *substr);`
-  * The function returns the index in terms of the **last term** in lexicographic order that matches the string `substr`.
-  * This function must run in O(log(nterms)) time.
+ 1. The function returns the index in terms of the **last term** in lexicographic order that matches the string `substr`.
+ 2. This function must run in _O(log(nterms))_ time.
 4. `void autocomplete(term **answer, int *n_answer, term *terms, int nterms, char *substr);`
-  * The function places the answers in `answer`, with `*n_answer` being the number of answers.
-  * The answers should be sorted by weight in non-increasing order.
-  * You must use **qsort** for this question.
+ 1. The function places the answers in `answer`, with `*n_answer` being the number of answers.
+ 2. The answers should be sorted by weight in non-increasing order.
+ 3. You must use **qsort** for this question.
